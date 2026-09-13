@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="flex gap-25 mb-20">
-        <div class="fixed">
+        <div class="">
             <details class="group-2 flex flex-col py-5 px-10 bg-[#AFD5AA] mx-auto rounded-4xl items-center gap-5 overflow-hidden ">
             <summary class="flex items-center list-none select-none hover:bg-[#9bc296]/20 transition-colors" >
                 <h3 class=" text-[#6D665F] font-[Blinker] mb-5 text-center uppercase font-bold text-5xl max-w-[300px] ">
