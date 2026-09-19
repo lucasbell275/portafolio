@@ -1,18 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="flex flex-col gap-5 md:flex-row container mx-auto max-w-[1224px]  mt-5">
+    <div class="flex flex-col gap-10 md:flex-row container mx-auto max-w-[1224px] mt-5">
 
-        <div class="flex flex-col gap-10 ">
+        <div class="flex flex-col gap-10 container ">
             {{-- Titulo FRONT-END --}}
             <h1
-                class="font-[Blinker] text-[#6D665F] text-5xl md:text-8xl font-bold md:max-w-[600px] tracking-[0.13em] leading-tight ">
+                class="font-[Blinker] text-[#6D665F] text-5xl md:text-8xl  font-bold text-center md:max-w-[600px] tracking-[0.13em] leading-tight ">
                 FRONT-END DEVELOPER</h1>
             {{-- Mi descripcion --}}
-            <div class="flex flex-col max-w-[700px] mx-auto items-center gap-5">
+            <div class="flex flex-col max-w-[700px]  items-center gap-5">
                 <p class="font-[Blinker] text-4xl md:text-7xl font-italic tracking-wider text-[#8C6057] text-center">SOBRE MI
                 </p>
-                <div class="flex px-5 py-6 bg-[#8C6057]/90 rounded-4xl mx-4 md:mx-1">
+                <div class="flex px-5 py-6 bg-[#8C6057] rounded-4xl mx-4 md:mx-1 mb-5">
 
                     <p class="text-[#F0F2EF] text-lg md:text-xl leading-8 md:leading-10 md:py-5 font-[Blinker] text-light">
                         Me llamo Lucas Bell, tengo 21 años. Siempre desde chico me atrae la computación, siendo a mis 17 mis
@@ -25,7 +25,7 @@
         </div>
 
         {{-- Cards con ALPINE --}}
-        <div class="flex flex-col gap-12  mt-8 w-[340px] md:w-[380px] mx-auto">
+        <div class="flex flex-col gap-12  md:mt-8 w-[340px] md:w-full mx-auto container">
             <div x-data="{ open: false }"
                 class="flex flex-col bg-[#6D665F] w-full rounded-2xl py-6 px-5 transition-all duration-300 h-fit">
                 
@@ -39,7 +39,7 @@
                     </svg>
                 </div>
                 
-                <div x-show="open" x-collapse x-transition x-cloak class="grid grid-cols-3 pt-6 gap-3 justify-items-center">
+                <div x-show="open" x-collapse x-transition x-cloak class="grid grid-cols-3 pt-6 gap-3 container justify-items-center">
                     <div>
                         <a href="https://www.linkedin.com/in/lucas-daniel-bell/">
                             <svg xmlns="http://www.w3.org/2000/svg" width="64px" height="64px" viewBox="0 0 24 24">
@@ -80,7 +80,7 @@
             </div>
 
             <div x-data="{ open: false }"
-                class="flex flex-col bg-[#AFD5AA]/60 w-full mb-10 rounded-2xl py-6 px-5 transition-all duration-300 h-fit">
+                class="flex flex-col bg-[#AFD5AA]/60 w-full  rounded-2xl py-6 px-5 transition-all duration-300 h-fit">
                 
                 <div @click="open = !open" class="flex flex-col items-center cursor-pointer w-full">
                     <span class="text-[#6D665F] font-[Blinker] mb-3 text-center uppercase font-semibold text-4xl md:text-5xl max-w-[260px] pointer-events-none">
@@ -92,7 +92,7 @@
                     </svg>
                 </div>
 
-                <div x-show="open" x-cloak x-collapse x-transition class="grid grid-cols-2 md:grid-cols-3 gap-6 pt-6 justify-items-center">
+                <div x-show="open" x-cloak x-collapse x-transition class="grid grid-cols-2 md:grid-cols-3 container gap-6 pt-6 justify-items-center">
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="64px" height="64px" viewBox="0 0 24 24">
                         <title>html</title>
@@ -142,11 +142,13 @@
         </div>
 
     </div>
-    <div class="max-w-[1224px] mx-auto container mt-5 min-h-screen bg-[#6D665F]/80">
+        <span class="border-b-2 border-[#8C6057]/25 mt-2 flex mx-auto max-w-[1224px] "></span>       
+    <div class="max-w-[1224px] mx-auto container mt-2 min-h-screen bg-[#5C5346]/90">
         <div class="flex flex-col items-center">
-            <h2 class="uppercase text-4xl font-bold tracking-wider font-[Blinker] text-[#B08982]">
+            <h2 class="uppercase text-4xl font-bold tracking-wider font-[Blinker] text-[#F0F2EF]">
                 mis proyectos
-            </h2>            
+            </h2>
+
         </div>
 
 
